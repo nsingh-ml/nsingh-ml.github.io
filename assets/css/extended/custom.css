@@ -1,0 +1,68 @@
+
+body {
+  font-family: 'Merriweather', Georgia, serif;
+  font-size: 16px;
+  line-height: 1.85;
+}
+h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+h2, h3, h4 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 600;
+}
+
+.post-content {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+
+code {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13.5px;
+}
+.post-content,
+.post-header {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+
+
+
+/* ── Body / reading text ─────────────────────────────────────────── */
+/*body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 17px;
+  line-height: 1.8;
+}
+*/
+/* ── Headings ────────────────────────────────────────────────────── */
+/*h1, h2, h3, h4 {
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}*/
+
+/* ── Post content specifically ───────────────────────────────────── */
+/*.post-content {
+  font-size: 17px;
+  line-height: 1.8;
+}*/
+
+/* ── Code blocks ─────────────────────────────────────────────────── */
+/*code {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Menlo', monospace;
+  font-size: 14px;
+}*/
+
+/* ── Max reading width (default PaperMod is quite wide) ─────────── */
+/*.post-content,
+.post-header {
+  max-width: 720px;
+  margin: 0 auto;
+}
+*/

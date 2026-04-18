@@ -1,0 +1,70 @@
+baseURL = "https://nsingh-ml.github.io/"
+languageCode = "en-us"
+title = "Nidhi Singh | World Models & JEPA Research"
+theme = "PaperMod"
+paginate = 10
+
+[params]
+  author = "Nidhi Singh"
+  description = "Research notes on World Models, JEPA, and self-supervised representation learning."
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
+  math = true
+
+  [params.homeInfoParams]
+    Title = "Hi, I'm Nidhi"
+    Content = """
+Independent ML Researcher. M.Sc. AI, Universität zu Lübeck.  
+Interested in learning compact world representations through latent-space prediction — without pixel reconstruction.  
+Writing weekly notes on papers in World Models, JEPA, and self-supervised learning.
+"""
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/nsingh-ml"
+
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://linkedin.com/in/nidhi9590"
+
+  # [[params.socialIcons]]
+  #   name = "email"
+  #   url = "mailto:YOUR-EMAIL"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 3
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block  = [['$$', '$$'], ['\[', '\]']]
+          inline = [['$', '$'],   ['\(', '\)']]
+  [markup.highlight]
+    style = "monokai"
+    lineNos = false
+    codeFences = true
