@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on Nidhi Singh | World Models &amp; JEPA Research</title><link>https://nsingh-ml.github.io/posts/</link><description>Recent content in Posts on Nidhi Singh | World Models &amp; JEPA Research</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 18 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://nsingh-ml.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Starting a Research Journal</title><link>https://nsingh-ml.github.io/posts/hello-world/</link><pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate><guid>https://nsingh-ml.github.io/posts/hello-world/</guid><description>&lt;p&gt;This blog documents my weekly reading notes on World Models and
+self-supervised representation learning.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;North Star:&lt;/strong&gt; Learning compact, abstract world representations
+through latent-space prediction — without pixel reconstruction —
+for sequential decision-making.&lt;/p&gt;
+&lt;h2 id="testing-latex"&gt;Testing LaTeX&lt;/h2&gt;
+&lt;p&gt;The KL term is $D_{KL}(q \| p)$&lt;/p&gt;
+&lt;p&gt;And the RSSM prior:&lt;/p&gt;
+$$
+z_t \sim p_\phi(z_t \mid h_t)
+$$&lt;p&gt;The VAE objective (ELBO) is:&lt;/p&gt;
+$$
+\mathcal{L}(\theta, \phi) = \mathbb{E}_{q_\phi(z \vert x)}[\log p_\theta(x \vert z)] - D_{KL}(q_\phi(z \vert x) \Vert p(z))
+$$&lt;h2 id="testing-code"&gt;Testing Code&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;import&lt;/span&gt; torch
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# MDN-RNN logvar collapse check&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;logvar &lt;span style="color:#f92672"&gt;=&lt;/span&gt; model&lt;span style="color:#f92672"&gt;.&lt;/span&gt;logvar&lt;span style="color:#f92672"&gt;.&lt;/span&gt;detach()
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;print(&lt;span style="color:#e6db74"&gt;f&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;logvar mean: &lt;/span&gt;&lt;span style="color:#e6db74"&gt;{&lt;/span&gt;logvar&lt;span style="color:#f92672"&gt;.&lt;/span&gt;mean()&lt;span style="color:#e6db74"&gt;:&lt;/span&gt;&lt;span style="color:#e6db74"&gt;.4f&lt;/span&gt;&lt;span style="color:#e6db74"&gt;}&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;&lt;/span&gt;) &lt;span style="color:#75715e"&gt;# Should not be near zero&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item></channel></rss>
